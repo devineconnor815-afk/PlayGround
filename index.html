@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101a19">
+  <title>Embervault — One-Room Dungeon</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <main class="game-shell">
+    <header class="topbar">
+      <a class="brand" href="#" aria-label="Embervault home"><span class="brand-mark">✦</span><span>EMBER<span class="brand-light">VAULT</span></span></a>
+      <div class="chapter"><span class="chapter-dot"></span> THE SUNKEN KEEP <span class="chapter-divider">/</span> ROOM 01</div>
+      <div class="top-note"><span class="keycap">ESC</span> PAUSE</div>
+    </header>
+    <section class="game-frame" aria-label="Embervault game">
+      <canvas id="game" width="960" height="640" aria-label="Top-down dungeon game"></canvas>
+      <div class="scanline" aria-hidden="true"></div>
+      <div class="mobile-controls" aria-label="Touch controls">
+        <div class="dpad" aria-label="Move">
+          <button data-dir="up" aria-label="Move up">▲</button>
+          <button data-dir="left" aria-label="Move left">◀</button>
+          <button data-dir="down" aria-label="Move down">▼</button>
+          <button data-dir="right" aria-label="Move right">▶</button>
+        </div>
+        <button class="attack-button" aria-label="Attack"><span>✦</span><small>ATTACK</small></button>
+      </div>
+    </section>
+    <footer class="footer"><span><b>✦</b> FIND THE KEY. BREAK THE SEAL. FACE THE WARDEN.</span><span class="footer-controls">MOVE <kbd>WASD</kbd> <kbd>↑↓←→</kbd><i>·</i> SLASH <kbd>SPACE</kbd></span></footer>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
